@@ -3,7 +3,10 @@ name = "blue-wood-35c6"
 main = "src/index.js"
 compatibility_date = "2024-04-23"
 compatibility_flags = ["nodejs_compat"]
-
+kv_namespaces = [
+  { binding = "LARK_KV", id = "742f37e299ca4d7fa60326b9a4270673" },
+  { binding = "OPENAI_THREAD_KV", id = "d326af1bc3ec48d5a90fab026c86ff6c" }
+]
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
 # rather than the end user may result in better performance.
