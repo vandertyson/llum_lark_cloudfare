@@ -55,7 +55,7 @@ export default {
               const answer = await answerObj.json()
               thread_id = answer.data.id;
               console.log("create new thread. chat_id: ", chat_id, ", thread_id: ", thread_id);
-              await env.LARK_KV.put(chat_id, thread_id);
+              await env.OPENAI_THREAD_KV.put(chat_id, thread_id);
               await handler.handle_user_chat(chat_id, chat_messeage, thread_id)
             }
           } catch (error) {
